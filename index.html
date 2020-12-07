@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Programação Linear</title>
+
+        <style type="text/css">
+            /* body {
+                background-color: aqua;
+            } */
+
+            #conteinerConteudoSite{
+                width: 1200px;
+                min-height: 300px;
+                height: auto;
+                box-sizing: border-box;
+                overflow: hidden;
+                margin: 50px auto;
+                /* border-top-right-radius: 10px;
+                border-top-left-radius: 10px; */
+                border-radius: 10px;
+                background-color: rgba(120, 180, 200, 0.5);
+            }
+
+            #tituloSite {
+                width: inherit;
+                height: 50px;
+                text-align: center;
+                font-size: 2.8em;
+                background-image: url('imagens/tenor.gif');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                color: #ffffff;         
+            }
+
+            .titulo {
+                width: 800px;
+                height: 30px;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 2em;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 20px;
+                border-bottom: solid 2px black;
+            }
+
+            .subtitulo {
+                font-size: 1.8em;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .texto {
+                width: 800px;
+                min-width: 50px;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 1.4em;
+                text-align: justify;
+                margin-bottom: 20px;
+            }
+
+            .conteinerVideo {
+                width: 560px;
+                height: 315px;
+                margin-right: auto;
+                margin-left: auto;
+                margin-bottom: 10px;
+            }
+
+            .imagem1 {
+                width: 1100px;
+                height: 300px;
+                margin-left: auto;
+                margin-right: auto;
+                background-image: url('imagens/imagem1.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-bottom: 10px;
+            }
+
+            #rodape {
+                width: 100%;
+                min-height: 28px;
+                height: auto;
+                margin-top: 20px;
+                line-height: 1.2em;
+                font-size: 1.2em;
+                text-align: center;
+                color: #ffffff;
+                background-color: rgba(180, 20, 220, 1);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="conteinerConteudoSite">
+            <div id="tituloSite">WebQuest - Programação Linear</div>
+
+            <div id="conteinerSobre">
+                <div class="subtitulo">Sobre</div>
+
+                <div class="texto">
+                    WebQuest - Programação Linear Faculdade de Tecnologia de Carapicuíba - Fatec. Atividade da disciplina de Programação Linear no curso de Análise e Desenvolvimento de sistemas do 5º semestre noturno, proposta pelo Profº Luciano Condori como atividade complementar.
+                </div>
+
+                <div class="subtitulo">Tarefa</div>
+                    
+                <div class="texto">
+                    Criar uma página web sobre programação linear como atividade complementar.
+                </div>
+
+                <div class="subtitulo">Objetivos</div>
+                    
+                <div class="texto">             
+                    > Obter conhecimentos específicos sobre os conteúdos expostos;
+                    <br>
+                    > Ajudar no aprendizado em aula;
+                    <br>
+                    > Ajudar outras pessoas a terem acesso a essa ferramenta de estudo;
+                    <br>
+                    > Compartilhar o conhecimento adquirido através dessa atividade.
+                </div>
+
+                <div class="titulo">Introdução à programacão linear</div>
+                <div class="conteinerVideo">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IqVlEplz9G4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="texto">
+                    Nesse vídeo, é abordado os conceitos que envolvem a Programação Linear. O autor faz uma breve descrição no início dos objetivos dessa área de estudo, em seguida, temos a parte prática do vídeo no qual são apresentados o passo a passo para a resolução de alguns exercícios.
+                </div>
+
+                <div class="titulo">Definição Programação Linear</div>
+                <div class="texto">
+                    Em matemática, problemas de Programação Linear (PL) são problemas de optimização nos quais a função objetivo e as restrições são todas lineares.
+
+Programação Linear é uma importante área da optimização por várias razões. Muitos problemas práticos em pesquisa operacional podem ser expressos como problemas de programação linear. Certos casos especiais dessa natureza, tais como problemas de network flow e problemas de multicommodity flow são considerados importantes o suficiente para que se tenha gerado muita pesquisa em algoritmos especializados para suas soluções. Vários algoritmos para outros tipos de problemas de optimização funcionam resolvendo problemas de PL como sub-problemas. Historicamente, ideias da programação linear inspiraram muitos dos conceitos centrais de teoria da optimização, tais como dualidade, decomposição, e a importância da convexidade e suas generalizações.
+                </div>
+
+                <div class="titulo">Exemplo de Aplicação</div>
+                <div class="texto">
+                    Aqui está um exemplo de problema de programação linear. Suponha que um fazendeiro tem um pedaço de terra de digamos, A km2, para ser semeado com trigo ou cevada ou uma combinação de ambas. O fazendeiro tem uma quantidade limitada de fertilizante F permitido e de inseticida P permitido que podem ser usados, cada um deles sendo necessários em quantidades diferentes por unidade de área para o trigo (F1, P1) e para a cevada (F2, P2). Seja S1 o preço de venda do trigo, e S2 o da cevada. Se chamarmos a área plantada com trigo e cevada de x1 e x2 respectivamente, então o número ideal de km2 de plantação com trigo vs. cevada pode ser expresso como um problema de programação linear:
+                </div>
+                <div class="imagem1"></div>
+
+                <div class="titulo">Teoria</div>
+                <div class="texto">
+                    Geometricamente, as restrições lineares definem um poliedro convexo, que é chamado de conjunto dos pontos viáveis. Uma vez que a função objectivo é também linear, todo ótimo local é automaticamente um ótimo global. A função objetivo ser linear também implica que uma solução ótima pode apenas ocorrer em um ponto da fronteira do conjunto de pontos viáveis.
+
+Existem duas situações nas quais uma solução ótima não pode ser encontrada. Primeiro, se as restrições se contradizem (por exemplo, x ≥ 2 e x ≤ 1) logo, a região factível é vazia e não pode haver solução ótima, já que não pode haver solução nenhuma. Neste caso, o PL é dito inviável.
+
+Alternativamente, o poliedro pode ser ilimitado na direção da função objetivo (por exemplo: maximizar x1 + 3 x2 sujeito a x1 ≥ 0, x2 ≥ 0, x1 + x2 ≥ 10), neste caso não existe solução ótima uma vez que soluções arbitrariamente grandes da função objetivo podem ser construídas, e o problema é dito ilimitado.
+
+Fora estas duas condições patológicas (que são frequentemente eliminadas por limitações dos recursos inerentes ao problema que está sendo modelado, como acima), o óptimo é sempre alcançado num vértice do poliedro. Entretanto, o ótimo nem sempre é único: é possível ter um conjunto de soluções ótimas cobrindo uma aresta ou face do poliedro, ou até mesmo o poliedro todo (Esta última situação pode ocorrer se a função objetivo for uniformemente igual a uma constante).
+                </div>
+
+                <div class="titulo">Algoritmos</div>
+                <div class="texto">
+                    O algoritmo simplex resolve problemas de PL construindo uma solução admissível no vértice do poliedro, e então percorre os vértices do poliedro que sucessivamente possuem valores mais altos da função objectivo até encontrar o máximo. Embora este algoritmo seja bastante eficiente na prática, e seja garantido de encontrar um óptimo global se certas condições para se evitar ciclos forem assumidas, ele é fraco no pior-caso: é possível construir um problema de programação linear prático para o qual o método simplex realiza uma quantidade exponencial de passos em relação ao tamanho do problema. Na verdade, por algum tempo não se soube se problemas de programação linear eram NP-completos ou tinham solução em tempo polinomial.
+
+                    O primeiro algoritmo de programação linear em tempo polinomial no pior caso foi proposto por Leonid Khachiyan em 1979. Foi baseado no [método do elipsóide] da nonlinear optimization de Naum Shor, que é uma generalização do método da elipsóide da [optimização convexa] de Arkadi Nemirovski, uma dos ganhadores do John von Neumann Theory Prize 2003, e D. Yudin.
+
+                    Entretanto, a performance prática do algoritmo de Khachiyan é desapontante: geralmente, o método simplex é mais eficiente. Sua grande importância é que ele encoraja a pesquisa dos métodos de pontos interiores. Ao contrário de algoritmo simplex, que apenas evolui ao longo de pontos na fronteira da região factível, métodos de ponto interior podem se mover pelo interior da região factível.
+
+                    Em 1984, Narendra Karmarkar propôs seu método projetivo, que tornou-se o primeiro algoritmo a apresentar um bom desempenho tanto na teoria como na prática: seu pior caso de complexidade é polinomial e os problemas práticos de experiência mostram que ele é razoavelmente eficiente em comparação com o algoritmo simplex. Desde o método de Karmarkar, muitos outros métodos de pontos interiores têm sido propostos e analisados. Um método bastante popular é o Método Preditor-corretor de Mehrotra, cuja atuação possui bom desempenho na prática, ainda que pouco se saiba sobre ele na teoria.
+
+                    A opinião mais recente entre os estudiosos é que a eficiência das boas implementações dos métodos baseados em simplex e dos pontos interiores são similares para a aplicação de rotina no programa linear.
+
+                    As soluções do programa linear estão em uso generalizado de otimização de diversos problemas na indústria, como a otimização de fluxo de transporte, que pode ser transformada em problemas de programação linear sem muitas dificuldades.
+                </div>
+
+                <div class="titulo">Variáveis Inteiras</div>
+                <div class="texto">
+                    Se todas as variáveis do problema pertencerem ao conjunto dos números inteiros, temos uma sub-classe da Programação Linear chamada Programação Inteira (PI) ou programação linear inteira. Ao contrário da PL que pode-se encontrar a solução óptima em um tempo razoável, muitos problemas de Programação Inteira são considerados NP-difícil. Se as variáveis forem binárias, ou seja, assumirem somente os valores 0 (zero) ou 1, temos um caso especial da PI, que também pode ser classificado como NP-difícil.
+                    <br>
+                    Quando somente algumas das variáveis são inteiras e outras contínuas, temos a "Programação Inteira Mista" (PIM).
+                    <br>
+                    Existem no entanto algumas classes de problemas que podem ser resolvidos na perfeição em tempo polinomial, estes têm uma estrutura matricial própria chamada Matrizes totalmente unimodulares.
+                    <br>
+                    Alguns algoritmos aplicados com sucesso na PI são:
+                    <br>
+                    > Branch and bound
+                    <br>
+                    > Branch and cut
+                    <br>
+                    > Branch and price
+                    <br>
+                    Se a estrutura do problema permitir é também possível se aplicar um algoritmo de geração de colunas
+                </div>
+            </div>
+
+            <div id="rodape">
+                Aluno: Michael Wilson Passos   ---    email: michael.wipa@hotmail.com
+                <br>
+                Instituição: Fatec - Carapicuíba ----   Curso: Análise e Desenvolvimento de sistemas
+            </div>
+        </div>
+    </body>
+</html>
